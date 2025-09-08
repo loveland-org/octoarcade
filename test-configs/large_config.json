@@ -1,0 +1,2372 @@
+{
+  "name": "Large Arcade Collection - Memory Test",
+  "description": "Large test configuration with 75+ games to test memory allocation fix",
+  "version": "2.1.3",
+  "created": "2025-09-08T10:03:26.588Z",
+  "games": [
+    {
+      "id": "game_1",
+      "name": "Pac-Man",
+      "genre": "Arcade",
+      "year": 1982,
+      "players": 1,
+      "description": "Arcade game: Pac-Man. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/pac_man.jpg",
+      "rom": "/roms/pac_man.zip",
+      "metadata": {
+        "fileSize": 1163447,
+        "lastPlayed": "2025-03-28T10:40:38.414Z",
+        "playCount": 284,
+        "highScore": 543823,
+        "difficulty": "Hard",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Pac-Man: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_2",
+      "name": "Ms. Pac-Man",
+      "genre": "Fighting",
+      "year": 1993,
+      "players": 2,
+      "description": "Fighting game: Ms. Pac-Man. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/ms__pac_man.jpg",
+      "rom": "/roms/ms__pac_man.zip",
+      "metadata": {
+        "fileSize": 1041062,
+        "lastPlayed": "2025-03-16T09:51:15.508Z",
+        "playCount": 329,
+        "highScore": 125473,
+        "difficulty": "Hard",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Ms. Pac-Man: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_3",
+      "name": "Galaga",
+      "genre": "Shoot 'em up",
+      "year": 1990,
+      "players": 1,
+      "description": "Shoot 'em up game: Galaga. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/galaga.jpg",
+      "rom": "/roms/galaga.zip",
+      "metadata": {
+        "fileSize": 5252083,
+        "lastPlayed": "2025-08-10T20:48:50.642Z",
+        "playCount": 988,
+        "highScore": 267970,
+        "difficulty": "Normal",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Galaga: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_4",
+      "name": "Galaxian",
+      "genre": "Platform",
+      "year": 1985,
+      "players": 1,
+      "description": "Platform game: Galaxian. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/galaxian.jpg",
+      "rom": "/roms/galaxian.zip",
+      "metadata": {
+        "fileSize": 3432774,
+        "lastPlayed": "2024-12-04T01:14:05.769Z",
+        "playCount": 146,
+        "highScore": 903715,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Galaxian: This game was released in 1985 and belongs to the Platform genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_5",
+      "name": "Centipede",
+      "genre": "Puzzle",
+      "year": 1988,
+      "players": 1,
+      "description": "Puzzle game: Centipede. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/centipede.jpg",
+      "rom": "/roms/centipede.zip",
+      "metadata": {
+        "fileSize": 5027880,
+        "lastPlayed": "2025-04-05T05:29:44.050Z",
+        "playCount": 739,
+        "highScore": 433201,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Centipede: This game was released in 1984 and belongs to the Puzzle genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_6",
+      "name": "Millipede",
+      "genre": "Racing",
+      "year": 1982,
+      "players": 1,
+      "description": "Racing game: Millipede. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "steering",
+        "accelerator",
+        "brake"
+      ],
+      "screenshot": "/screenshots/millipede.jpg",
+      "rom": "/roms/millipede.zip",
+      "metadata": {
+        "fileSize": 1062995,
+        "lastPlayed": "2025-04-06T03:03:08.987Z",
+        "playCount": 815,
+        "highScore": 222378,
+        "difficulty": "Normal",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Millipede: This game was released in 1982 and belongs to the Racing genre. It supports 1 player(s) and uses the following controls: steering, accelerator, brake. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_7",
+      "name": "Frogger",
+      "genre": "Sports",
+      "year": 1991,
+      "players": 2,
+      "description": "Sports game: Frogger. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/frogger.jpg",
+      "rom": "/roms/frogger.zip",
+      "metadata": {
+        "fileSize": 4282958,
+        "lastPlayed": "2025-06-02T07:36:17.254Z",
+        "playCount": 135,
+        "highScore": 526613,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Frogger: This game was released in 1987 and belongs to the Sports genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_8",
+      "name": "Donkey Kong",
+      "genre": "Beat 'em up",
+      "year": 1997,
+      "players": 2,
+      "description": "Beat 'em up game: Donkey Kong. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/donkey_kong.jpg",
+      "rom": "/roms/donkey_kong.zip",
+      "metadata": {
+        "fileSize": 10681295,
+        "lastPlayed": "2025-04-20T23:54:20.924Z",
+        "playCount": 36,
+        "highScore": 537256,
+        "difficulty": "Hard",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Donkey Kong: This game was released in 1989 and belongs to the Beat 'em up genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_9",
+      "name": "Donkey Kong Jr.",
+      "genre": "Arcade",
+      "year": 1985,
+      "players": 1,
+      "description": "Arcade game: Donkey Kong Jr.. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/donkey_kong_jr_.jpg",
+      "rom": "/roms/donkey_kong_jr_.zip",
+      "metadata": {
+        "fileSize": 7053841,
+        "lastPlayed": "2025-04-03T22:56:35.897Z",
+        "playCount": 823,
+        "highScore": 669326,
+        "difficulty": "Normal",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Donkey Kong Jr.: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_10",
+      "name": "Mario Bros.",
+      "genre": "Fighting",
+      "year": 1991,
+      "players": 2,
+      "description": "Fighting game: Mario Bros.. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/mario_bros_.jpg",
+      "rom": "/roms/mario_bros_.zip",
+      "metadata": {
+        "fileSize": 2458365,
+        "lastPlayed": "2025-04-29T10:03:08.250Z",
+        "playCount": 118,
+        "highScore": 507757,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Mario Bros.: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_11",
+      "name": "Popeye",
+      "genre": "Shoot 'em up",
+      "year": 1987,
+      "players": 1,
+      "description": "Shoot 'em up game: Popeye. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/popeye.jpg",
+      "rom": "/roms/popeye.zip",
+      "metadata": {
+        "fileSize": 9899911,
+        "lastPlayed": "2025-08-29T22:13:10.733Z",
+        "playCount": 345,
+        "highScore": 812386,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Popeye: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_12",
+      "name": "Q*bert",
+      "genre": "Platform",
+      "year": 1992,
+      "players": 1,
+      "description": "Platform game: Q*bert. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/q_bert.jpg",
+      "rom": "/roms/q_bert.zip",
+      "metadata": {
+        "fileSize": 7529994,
+        "lastPlayed": "2024-11-27T09:18:28.624Z",
+        "playCount": 130,
+        "highScore": 750139,
+        "difficulty": "Hard",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Q*bert: This game was released in 1985 and belongs to the Platform genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_13",
+      "name": "Joust",
+      "genre": "Puzzle",
+      "year": 1984,
+      "players": 1,
+      "description": "Puzzle game: Joust. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/joust.jpg",
+      "rom": "/roms/joust.zip",
+      "metadata": {
+        "fileSize": 8407968,
+        "lastPlayed": "2025-04-04T18:26:22.453Z",
+        "playCount": 320,
+        "highScore": 561964,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Joust: This game was released in 1984 and belongs to the Puzzle genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_14",
+      "name": "Defender",
+      "genre": "Racing",
+      "year": 1983,
+      "players": 1,
+      "description": "Racing game: Defender. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "steering",
+        "accelerator",
+        "brake"
+      ],
+      "screenshot": "/screenshots/defender.jpg",
+      "rom": "/roms/defender.zip",
+      "metadata": {
+        "fileSize": 3390788,
+        "lastPlayed": "2024-10-16T22:48:26.861Z",
+        "playCount": 119,
+        "highScore": 129764,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Defender: This game was released in 1982 and belongs to the Racing genre. It supports 1 player(s) and uses the following controls: steering, accelerator, brake. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_15",
+      "name": "Stargate",
+      "genre": "Sports",
+      "year": 1991,
+      "players": 2,
+      "description": "Sports game: Stargate. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/stargate.jpg",
+      "rom": "/roms/stargate.zip",
+      "metadata": {
+        "fileSize": 7724004,
+        "lastPlayed": "2025-02-12T00:53:08.579Z",
+        "playCount": 645,
+        "highScore": 521027,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Stargate: This game was released in 1987 and belongs to the Sports genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_16",
+      "name": "Robotron 2084",
+      "genre": "Beat 'em up",
+      "year": 1995,
+      "players": 2,
+      "description": "Beat 'em up game: Robotron 2084. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/robotron_2084.jpg",
+      "rom": "/roms/robotron_2084.zip",
+      "metadata": {
+        "fileSize": 8755106,
+        "lastPlayed": "2025-01-04T19:56:54.302Z",
+        "playCount": 215,
+        "highScore": 215089,
+        "difficulty": "Normal",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Robotron 2084: This game was released in 1989 and belongs to the Beat 'em up genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_17",
+      "name": "Street Fighter II",
+      "genre": "Arcade",
+      "year": 1986,
+      "players": 1,
+      "description": "Arcade game: Street Fighter II. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/street_fighter_ii.jpg",
+      "rom": "/roms/street_fighter_ii.zip",
+      "metadata": {
+        "fileSize": 1623196,
+        "lastPlayed": "2024-10-11T16:42:17.352Z",
+        "playCount": 220,
+        "highScore": 824303,
+        "difficulty": "Normal",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Street Fighter II: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_18",
+      "name": "Street Fighter",
+      "genre": "Fighting",
+      "year": 1992,
+      "players": 2,
+      "description": "Fighting game: Street Fighter. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/street_fighter.jpg",
+      "rom": "/roms/street_fighter.zip",
+      "metadata": {
+        "fileSize": 3649507,
+        "lastPlayed": "2025-03-03T00:58:32.208Z",
+        "playCount": 309,
+        "highScore": 540482,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Street Fighter: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_19",
+      "name": "Final Fight",
+      "genre": "Shoot 'em up",
+      "year": 1987,
+      "players": 1,
+      "description": "Shoot 'em up game: Final Fight. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/final_fight.jpg",
+      "rom": "/roms/final_fight.zip",
+      "metadata": {
+        "fileSize": 8181875,
+        "lastPlayed": "2025-05-10T11:21:25.922Z",
+        "playCount": 855,
+        "highScore": 133142,
+        "difficulty": "Easy",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Final Fight: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_20",
+      "name": "Double Dragon",
+      "genre": "Platform",
+      "year": 1988,
+      "players": 1,
+      "description": "Platform game: Double Dragon. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/double_dragon.jpg",
+      "rom": "/roms/double_dragon.zip",
+      "metadata": {
+        "fileSize": 8542178,
+        "lastPlayed": "2025-05-27T17:14:53.200Z",
+        "playCount": 218,
+        "highScore": 148191,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Double Dragon: This game was released in 1985 and belongs to the Platform genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_21",
+      "name": "Golden Axe",
+      "genre": "Puzzle",
+      "year": 1992,
+      "players": 1,
+      "description": "Puzzle game: Golden Axe. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/golden_axe.jpg",
+      "rom": "/roms/golden_axe.zip",
+      "metadata": {
+        "fileSize": 3751130,
+        "lastPlayed": "2025-08-28T04:57:32.486Z",
+        "playCount": 164,
+        "highScore": 188651,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Golden Axe: This game was released in 1984 and belongs to the Puzzle genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_22",
+      "name": "Streets of Rage",
+      "genre": "Racing",
+      "year": 1987,
+      "players": 1,
+      "description": "Racing game: Streets of Rage. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "steering",
+        "accelerator",
+        "brake"
+      ],
+      "screenshot": "/screenshots/streets_of_rage.jpg",
+      "rom": "/roms/streets_of_rage.zip",
+      "metadata": {
+        "fileSize": 8416020,
+        "lastPlayed": "2024-11-02T13:12:40.646Z",
+        "playCount": 958,
+        "highScore": 534838,
+        "difficulty": "Hard",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Streets of Rage: This game was released in 1982 and belongs to the Racing genre. It supports 1 player(s) and uses the following controls: steering, accelerator, brake. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_23",
+      "name": "King of Fighters",
+      "genre": "Sports",
+      "year": 1996,
+      "players": 2,
+      "description": "Sports game: King of Fighters. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/king_of_fighters.jpg",
+      "rom": "/roms/king_of_fighters.zip",
+      "metadata": {
+        "fileSize": 7523212,
+        "lastPlayed": "2024-09-12T12:07:57.971Z",
+        "playCount": 49,
+        "highScore": 833912,
+        "difficulty": "Normal",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for King of Fighters: This game was released in 1987 and belongs to the Sports genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_24",
+      "name": "Fatal Fury",
+      "genre": "Beat 'em up",
+      "year": 1994,
+      "players": 2,
+      "description": "Beat 'em up game: Fatal Fury. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/fatal_fury.jpg",
+      "rom": "/roms/fatal_fury.zip",
+      "metadata": {
+        "fileSize": 9761890,
+        "lastPlayed": "2025-01-15T23:36:48.114Z",
+        "playCount": 785,
+        "highScore": 404925,
+        "difficulty": "Hard",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Fatal Fury: This game was released in 1989 and belongs to the Beat 'em up genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_25",
+      "name": "Samurai Shodown",
+      "genre": "Arcade",
+      "year": 1983,
+      "players": 1,
+      "description": "Arcade game: Samurai Shodown. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/samurai_shodown.jpg",
+      "rom": "/roms/samurai_shodown.zip",
+      "metadata": {
+        "fileSize": 6130398,
+        "lastPlayed": "2025-09-03T12:57:09.779Z",
+        "playCount": 61,
+        "highScore": 815165,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Samurai Shodown: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_26",
+      "name": "Darkstalkers",
+      "genre": "Fighting",
+      "year": 1999,
+      "players": 2,
+      "description": "Fighting game: Darkstalkers. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/darkstalkers.jpg",
+      "rom": "/roms/darkstalkers.zip",
+      "metadata": {
+        "fileSize": 3692922,
+        "lastPlayed": "2024-11-16T20:50:33.639Z",
+        "playCount": 223,
+        "highScore": 598166,
+        "difficulty": "Normal",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Darkstalkers: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_27",
+      "name": "Tekken",
+      "genre": "Shoot 'em up",
+      "year": 1982,
+      "players": 1,
+      "description": "Shoot 'em up game: Tekken. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/tekken.jpg",
+      "rom": "/roms/tekken.zip",
+      "metadata": {
+        "fileSize": 8163208,
+        "lastPlayed": "2025-02-10T14:49:06.309Z",
+        "playCount": 837,
+        "highScore": 567066,
+        "difficulty": "Normal",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Tekken: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_28",
+      "name": "Mortal Kombat",
+      "genre": "Platform",
+      "year": 1990,
+      "players": 1,
+      "description": "Platform game: Mortal Kombat. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/mortal_kombat.jpg",
+      "rom": "/roms/mortal_kombat.zip",
+      "metadata": {
+        "fileSize": 5445397,
+        "lastPlayed": "2025-06-17T17:30:28.671Z",
+        "playCount": 937,
+        "highScore": 228435,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Mortal Kombat: This game was released in 1985 and belongs to the Platform genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_29",
+      "name": "Space Invaders",
+      "genre": "Puzzle",
+      "year": 1989,
+      "players": 1,
+      "description": "Puzzle game: Space Invaders. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/space_invaders.jpg",
+      "rom": "/roms/space_invaders.zip",
+      "metadata": {
+        "fileSize": 4915603,
+        "lastPlayed": "2024-10-19T19:53:43.316Z",
+        "playCount": 936,
+        "highScore": 784006,
+        "difficulty": "Hard",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Space Invaders: This game was released in 1984 and belongs to the Puzzle genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_30",
+      "name": "Asteroids",
+      "genre": "Racing",
+      "year": 1991,
+      "players": 1,
+      "description": "Racing game: Asteroids. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "steering",
+        "accelerator",
+        "brake"
+      ],
+      "screenshot": "/screenshots/asteroids.jpg",
+      "rom": "/roms/asteroids.zip",
+      "metadata": {
+        "fileSize": 3941143,
+        "lastPlayed": "2025-03-31T16:55:57.464Z",
+        "playCount": 744,
+        "highScore": 355284,
+        "difficulty": "Normal",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Asteroids: This game was released in 1982 and belongs to the Racing genre. It supports 1 player(s) and uses the following controls: steering, accelerator, brake. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_31",
+      "name": "Missile Command",
+      "genre": "Sports",
+      "year": 1995,
+      "players": 2,
+      "description": "Sports game: Missile Command. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/missile_command.jpg",
+      "rom": "/roms/missile_command.zip",
+      "metadata": {
+        "fileSize": 10321059,
+        "lastPlayed": "2025-08-17T05:34:52.166Z",
+        "playCount": 205,
+        "highScore": 688986,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Missile Command: This game was released in 1987 and belongs to the Sports genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_32",
+      "name": "Tempest",
+      "genre": "Beat 'em up",
+      "year": 1992,
+      "players": 2,
+      "description": "Beat 'em up game: Tempest. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/tempest.jpg",
+      "rom": "/roms/tempest.zip",
+      "metadata": {
+        "fileSize": 3268925,
+        "lastPlayed": "2025-02-10T22:50:00.529Z",
+        "playCount": 775,
+        "highScore": 507282,
+        "difficulty": "Easy",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Tempest: This game was released in 1989 and belongs to the Beat 'em up genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_33",
+      "name": "Battlezone",
+      "genre": "Arcade",
+      "year": 1989,
+      "players": 1,
+      "description": "Arcade game: Battlezone. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/battlezone.jpg",
+      "rom": "/roms/battlezone.zip",
+      "metadata": {
+        "fileSize": 6316733,
+        "lastPlayed": "2025-01-27T16:18:46.592Z",
+        "playCount": 959,
+        "highScore": 92988,
+        "difficulty": "Hard",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Battlezone: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_34",
+      "name": "Red Baron",
+      "genre": "Fighting",
+      "year": 1997,
+      "players": 2,
+      "description": "Fighting game: Red Baron. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/red_baron.jpg",
+      "rom": "/roms/red_baron.zip",
+      "metadata": {
+        "fileSize": 9257260,
+        "lastPlayed": "2024-11-04T14:46:59.966Z",
+        "playCount": 189,
+        "highScore": 93541,
+        "difficulty": "Hard",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Red Baron: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_35",
+      "name": "Star Wars",
+      "genre": "Shoot 'em up",
+      "year": 1988,
+      "players": 1,
+      "description": "Shoot 'em up game: Star Wars. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/star_wars.jpg",
+      "rom": "/roms/star_wars.zip",
+      "metadata": {
+        "fileSize": 7077329,
+        "lastPlayed": "2024-12-28T14:50:09.368Z",
+        "playCount": 735,
+        "highScore": 739944,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Star Wars: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_36",
+      "name": "Tron",
+      "genre": "Platform",
+      "year": 1990,
+      "players": 1,
+      "description": "Platform game: Tron. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/tron.jpg",
+      "rom": "/roms/tron.zip",
+      "metadata": {
+        "fileSize": 2194803,
+        "lastPlayed": "2025-02-05T04:37:25.510Z",
+        "playCount": 166,
+        "highScore": 148172,
+        "difficulty": "Normal",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Tron: This game was released in 1985 and belongs to the Platform genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_37",
+      "name": "Spy Hunter",
+      "genre": "Puzzle",
+      "year": 1986,
+      "players": 1,
+      "description": "Puzzle game: Spy Hunter. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/spy_hunter.jpg",
+      "rom": "/roms/spy_hunter.zip",
+      "metadata": {
+        "fileSize": 7192179,
+        "lastPlayed": "2025-02-18T21:20:23.583Z",
+        "playCount": 580,
+        "highScore": 252271,
+        "difficulty": "Normal",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Spy Hunter: This game was released in 1984 and belongs to the Puzzle genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_38",
+      "name": "Moon Patrol",
+      "genre": "Racing",
+      "year": 1987,
+      "players": 1,
+      "description": "Racing game: Moon Patrol. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "steering",
+        "accelerator",
+        "brake"
+      ],
+      "screenshot": "/screenshots/moon_patrol.jpg",
+      "rom": "/roms/moon_patrol.zip",
+      "metadata": {
+        "fileSize": 1106336,
+        "lastPlayed": "2025-05-15T00:38:23.321Z",
+        "playCount": 622,
+        "highScore": 570657,
+        "difficulty": "Normal",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Moon Patrol: This game was released in 1982 and belongs to the Racing genre. It supports 1 player(s) and uses the following controls: steering, accelerator, brake. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_39",
+      "name": "Scramble",
+      "genre": "Sports",
+      "year": 1989,
+      "players": 2,
+      "description": "Sports game: Scramble. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/scramble.jpg",
+      "rom": "/roms/scramble.zip",
+      "metadata": {
+        "fileSize": 9519172,
+        "lastPlayed": "2025-08-29T20:38:24.148Z",
+        "playCount": 543,
+        "highScore": 9860,
+        "difficulty": "Normal",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Scramble: This game was released in 1987 and belongs to the Sports genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_40",
+      "name": "Gyruss",
+      "genre": "Beat 'em up",
+      "year": 1996,
+      "players": 2,
+      "description": "Beat 'em up game: Gyruss. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/gyruss.jpg",
+      "rom": "/roms/gyruss.zip",
+      "metadata": {
+        "fileSize": 1832850,
+        "lastPlayed": "2025-07-25T04:07:07.881Z",
+        "playCount": 353,
+        "highScore": 136431,
+        "difficulty": "Normal",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Gyruss: This game was released in 1989 and belongs to the Beat 'em up genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_41",
+      "name": "Time Pilot",
+      "genre": "Arcade",
+      "year": 1983,
+      "players": 1,
+      "description": "Arcade game: Time Pilot. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/time_pilot.jpg",
+      "rom": "/roms/time_pilot.zip",
+      "metadata": {
+        "fileSize": 7473113,
+        "lastPlayed": "2025-08-05T09:06:01.461Z",
+        "playCount": 21,
+        "highScore": 204422,
+        "difficulty": "Normal",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Time Pilot: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_42",
+      "name": "Vanguard",
+      "genre": "Fighting",
+      "year": 1992,
+      "players": 2,
+      "description": "Fighting game: Vanguard. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/vanguard.jpg",
+      "rom": "/roms/vanguard.zip",
+      "metadata": {
+        "fileSize": 9752355,
+        "lastPlayed": "2025-09-07T07:48:42.071Z",
+        "playCount": 489,
+        "highScore": 676866,
+        "difficulty": "Normal",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Vanguard: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_43",
+      "name": "Tetris",
+      "genre": "Shoot 'em up",
+      "year": 1990,
+      "players": 1,
+      "description": "Shoot 'em up game: Tetris. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/tetris.jpg",
+      "rom": "/roms/tetris.zip",
+      "metadata": {
+        "fileSize": 7731515,
+        "lastPlayed": "2024-12-28T09:29:10.112Z",
+        "playCount": 978,
+        "highScore": 31031,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Tetris: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_44",
+      "name": "Dr. Mario",
+      "genre": "Platform",
+      "year": 1987,
+      "players": 1,
+      "description": "Platform game: Dr. Mario. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/dr__mario.jpg",
+      "rom": "/roms/dr__mario.zip",
+      "metadata": {
+        "fileSize": 2076426,
+        "lastPlayed": "2025-06-17T18:16:23.155Z",
+        "playCount": 298,
+        "highScore": 380429,
+        "difficulty": "Easy",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Dr. Mario: This game was released in 1985 and belongs to the Platform genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_45",
+      "name": "Columns",
+      "genre": "Puzzle",
+      "year": 1988,
+      "players": 1,
+      "description": "Puzzle game: Columns. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/columns.jpg",
+      "rom": "/roms/columns.zip",
+      "metadata": {
+        "fileSize": 10532115,
+        "lastPlayed": "2025-04-20T11:46:11.530Z",
+        "playCount": 261,
+        "highScore": 399586,
+        "difficulty": "Hard",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Columns: This game was released in 1984 and belongs to the Puzzle genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_46",
+      "name": "Puyo Puyo",
+      "genre": "Racing",
+      "year": 1985,
+      "players": 1,
+      "description": "Racing game: Puyo Puyo. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "steering",
+        "accelerator",
+        "brake"
+      ],
+      "screenshot": "/screenshots/puyo_puyo.jpg",
+      "rom": "/roms/puyo_puyo.zip",
+      "metadata": {
+        "fileSize": 7500822,
+        "lastPlayed": "2025-08-17T13:33:34.924Z",
+        "playCount": 968,
+        "highScore": 433676,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Puyo Puyo: This game was released in 1982 and belongs to the Racing genre. It supports 1 player(s) and uses the following controls: steering, accelerator, brake. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_47",
+      "name": "Panel de Pon",
+      "genre": "Sports",
+      "year": 1992,
+      "players": 2,
+      "description": "Sports game: Panel de Pon. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/panel_de_pon.jpg",
+      "rom": "/roms/panel_de_pon.zip",
+      "metadata": {
+        "fileSize": 4354374,
+        "lastPlayed": "2024-09-28T19:19:20.206Z",
+        "playCount": 632,
+        "highScore": 66962,
+        "difficulty": "Easy",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Panel de Pon: This game was released in 1987 and belongs to the Sports genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_48",
+      "name": "Magical Drop",
+      "genre": "Beat 'em up",
+      "year": 1996,
+      "players": 2,
+      "description": "Beat 'em up game: Magical Drop. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/magical_drop.jpg",
+      "rom": "/roms/magical_drop.zip",
+      "metadata": {
+        "fileSize": 3056860,
+        "lastPlayed": "2025-05-11T20:56:07.496Z",
+        "playCount": 861,
+        "highScore": 363961,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Magical Drop: This game was released in 1989 and belongs to the Beat 'em up genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_49",
+      "name": "Money Puzzle",
+      "genre": "Arcade",
+      "year": 1985,
+      "players": 1,
+      "description": "Arcade game: Money Puzzle. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/money_puzzle.jpg",
+      "rom": "/roms/money_puzzle.zip",
+      "metadata": {
+        "fileSize": 2599881,
+        "lastPlayed": "2025-02-22T21:19:05.340Z",
+        "playCount": 451,
+        "highScore": 347358,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Money Puzzle: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_50",
+      "name": "Out Run",
+      "genre": "Fighting",
+      "year": 1999,
+      "players": 2,
+      "description": "Fighting game: Out Run. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/out_run.jpg",
+      "rom": "/roms/out_run.zip",
+      "metadata": {
+        "fileSize": 3371278,
+        "lastPlayed": "2024-10-02T12:12:54.171Z",
+        "playCount": 728,
+        "highScore": 272317,
+        "difficulty": "Easy",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Out Run: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_51",
+      "name": "Pole Position",
+      "genre": "Shoot 'em up",
+      "year": 1987,
+      "players": 1,
+      "description": "Shoot 'em up game: Pole Position. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/pole_position.jpg",
+      "rom": "/roms/pole_position.zip",
+      "metadata": {
+        "fileSize": 3430583,
+        "lastPlayed": "2025-07-23T23:44:30.487Z",
+        "playCount": 253,
+        "highScore": 8611,
+        "difficulty": "Hard",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Pole Position: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_52",
+      "name": "Hang-On",
+      "genre": "Platform",
+      "year": 1985,
+      "players": 1,
+      "description": "Platform game: Hang-On. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/hang_on.jpg",
+      "rom": "/roms/hang_on.zip",
+      "metadata": {
+        "fileSize": 10171589,
+        "lastPlayed": "2025-08-03T08:18:24.418Z",
+        "playCount": 909,
+        "highScore": 346739,
+        "difficulty": "Easy",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Hang-On: This game was released in 1985 and belongs to the Platform genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_53",
+      "name": "Road Blasters",
+      "genre": "Puzzle",
+      "year": 1991,
+      "players": 1,
+      "description": "Puzzle game: Road Blasters. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/road_blasters.jpg",
+      "rom": "/roms/road_blasters.zip",
+      "metadata": {
+        "fileSize": 10625295,
+        "lastPlayed": "2025-08-07T23:01:31.563Z",
+        "playCount": 347,
+        "highScore": 181556,
+        "difficulty": "Normal",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Road Blasters: This game was released in 1984 and belongs to the Puzzle genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_54",
+      "name": "Super Sprint",
+      "genre": "Racing",
+      "year": 1989,
+      "players": 1,
+      "description": "Racing game: Super Sprint. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "steering",
+        "accelerator",
+        "brake"
+      ],
+      "screenshot": "/screenshots/super_sprint.jpg",
+      "rom": "/roms/super_sprint.zip",
+      "metadata": {
+        "fileSize": 9940842,
+        "lastPlayed": "2024-11-29T05:33:43.949Z",
+        "playCount": 306,
+        "highScore": 920765,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Super Sprint: This game was released in 1982 and belongs to the Racing genre. It supports 1 player(s) and uses the following controls: steering, accelerator, brake. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_55",
+      "name": "Championship Sprint",
+      "genre": "Sports",
+      "year": 1988,
+      "players": 2,
+      "description": "Sports game: Championship Sprint. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/championship_sprint.jpg",
+      "rom": "/roms/championship_sprint.zip",
+      "metadata": {
+        "fileSize": 4910381,
+        "lastPlayed": "2025-08-01T23:33:43.790Z",
+        "playCount": 941,
+        "highScore": 924093,
+        "difficulty": "Hard",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Championship Sprint: This game was released in 1987 and belongs to the Sports genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_56",
+      "name": "Track & Field",
+      "genre": "Beat 'em up",
+      "year": 1994,
+      "players": 2,
+      "description": "Beat 'em up game: Track & Field. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/track___field.jpg",
+      "rom": "/roms/track___field.zip",
+      "metadata": {
+        "fileSize": 3812395,
+        "lastPlayed": "2025-06-18T19:38:52.792Z",
+        "playCount": 511,
+        "highScore": 290325,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Track & Field: This game was released in 1989 and belongs to the Beat 'em up genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_57",
+      "name": "Hyper Olympic",
+      "genre": "Arcade",
+      "year": 1985,
+      "players": 1,
+      "description": "Arcade game: Hyper Olympic. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/hyper_olympic.jpg",
+      "rom": "/roms/hyper_olympic.zip",
+      "metadata": {
+        "fileSize": 4024470,
+        "lastPlayed": "2025-05-12T21:14:01.112Z",
+        "playCount": 513,
+        "highScore": 801475,
+        "difficulty": "Normal",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Hyper Olympic: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_58",
+      "name": "10-Yard Fight",
+      "genre": "Fighting",
+      "year": 1998,
+      "players": 2,
+      "description": "Fighting game: 10-Yard Fight. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/10_yard_fight.jpg",
+      "rom": "/roms/10_yard_fight.zip",
+      "metadata": {
+        "fileSize": 5510246,
+        "lastPlayed": "2025-05-31T20:26:02.790Z",
+        "playCount": 233,
+        "highScore": 136538,
+        "difficulty": "Easy",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for 10-Yard Fight: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_59",
+      "name": "Tecmo Bowl",
+      "genre": "Shoot 'em up",
+      "year": 1981,
+      "players": 1,
+      "description": "Shoot 'em up game: Tecmo Bowl. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/tecmo_bowl.jpg",
+      "rom": "/roms/tecmo_bowl.zip",
+      "metadata": {
+        "fileSize": 1693659,
+        "lastPlayed": "2024-09-29T19:54:58.225Z",
+        "playCount": 101,
+        "highScore": 411201,
+        "difficulty": "Easy",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Tecmo Bowl: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_60",
+      "name": "NBA Jam",
+      "genre": "Platform",
+      "year": 1993,
+      "players": 1,
+      "description": "Platform game: NBA Jam. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/nba_jam.jpg",
+      "rom": "/roms/nba_jam.zip",
+      "metadata": {
+        "fileSize": 10258446,
+        "lastPlayed": "2025-07-09T06:08:01.504Z",
+        "playCount": 646,
+        "highScore": 147916,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for NBA Jam: This game was released in 1985 and belongs to the Platform genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_61",
+      "name": "Arch Rivals",
+      "genre": "Puzzle",
+      "year": 1986,
+      "players": 1,
+      "description": "Puzzle game: Arch Rivals. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/arch_rivals.jpg",
+      "rom": "/roms/arch_rivals.zip",
+      "metadata": {
+        "fileSize": 4269160,
+        "lastPlayed": "2025-08-01T02:02:26.138Z",
+        "playCount": 745,
+        "highScore": 993274,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Arch Rivals: This game was released in 1984 and belongs to the Puzzle genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_62",
+      "name": "Gauntlet",
+      "genre": "Racing",
+      "year": 1988,
+      "players": 1,
+      "description": "Racing game: Gauntlet. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "steering",
+        "accelerator",
+        "brake"
+      ],
+      "screenshot": "/screenshots/gauntlet.jpg",
+      "rom": "/roms/gauntlet.zip",
+      "metadata": {
+        "fileSize": 4500490,
+        "lastPlayed": "2024-11-04T18:01:34.510Z",
+        "playCount": 600,
+        "highScore": 854805,
+        "difficulty": "Normal",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Gauntlet: This game was released in 1982 and belongs to the Racing genre. It supports 1 player(s) and uses the following controls: steering, accelerator, brake. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_63",
+      "name": "Gauntlet II",
+      "genre": "Sports",
+      "year": 1988,
+      "players": 2,
+      "description": "Sports game: Gauntlet II. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/gauntlet_ii.jpg",
+      "rom": "/roms/gauntlet_ii.zip",
+      "metadata": {
+        "fileSize": 10853350,
+        "lastPlayed": "2025-01-12T05:33:27.692Z",
+        "playCount": 668,
+        "highScore": 471695,
+        "difficulty": "Hard",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Gauntlet II: This game was released in 1987 and belongs to the Sports genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_64",
+      "name": "Rampage",
+      "genre": "Beat 'em up",
+      "year": 1991,
+      "players": 2,
+      "description": "Beat 'em up game: Rampage. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/rampage.jpg",
+      "rom": "/roms/rampage.zip",
+      "metadata": {
+        "fileSize": 7931364,
+        "lastPlayed": "2024-10-27T05:55:56.236Z",
+        "playCount": 567,
+        "highScore": 695592,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Rampage: This game was released in 1989 and belongs to the Beat 'em up genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_65",
+      "name": "Smash TV",
+      "genre": "Arcade",
+      "year": 1989,
+      "players": 1,
+      "description": "Arcade game: Smash TV. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/smash_tv.jpg",
+      "rom": "/roms/smash_tv.zip",
+      "metadata": {
+        "fileSize": 7985437,
+        "lastPlayed": "2025-05-08T21:11:58.946Z",
+        "playCount": 250,
+        "highScore": 847957,
+        "difficulty": "Normal",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Smash TV: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_66",
+      "name": "Total Carnage",
+      "genre": "Fighting",
+      "year": 1997,
+      "players": 2,
+      "description": "Fighting game: Total Carnage. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/total_carnage.jpg",
+      "rom": "/roms/total_carnage.zip",
+      "metadata": {
+        "fileSize": 4827263,
+        "lastPlayed": "2024-12-12T14:08:03.992Z",
+        "playCount": 10,
+        "highScore": 630805,
+        "difficulty": "Hard",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Total Carnage: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_67",
+      "name": "Narc",
+      "genre": "Shoot 'em up",
+      "year": 1984,
+      "players": 1,
+      "description": "Shoot 'em up game: Narc. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/narc.jpg",
+      "rom": "/roms/narc.zip",
+      "metadata": {
+        "fileSize": 5924194,
+        "lastPlayed": "2025-07-01T11:06:11.517Z",
+        "playCount": 352,
+        "highScore": 540482,
+        "difficulty": "Hard",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Narc: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_68",
+      "name": "APB",
+      "genre": "Platform",
+      "year": 1989,
+      "players": 1,
+      "description": "Platform game: APB. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/apb.jpg",
+      "rom": "/roms/apb.zip",
+      "metadata": {
+        "fileSize": 8716967,
+        "lastPlayed": "2025-06-05T04:07:49.786Z",
+        "playCount": 449,
+        "highScore": 261777,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for APB: This game was released in 1985 and belongs to the Platform genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_69",
+      "name": "Dig Dug",
+      "genre": "Puzzle",
+      "year": 1992,
+      "players": 1,
+      "description": "Puzzle game: Dig Dug. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/dig_dug.jpg",
+      "rom": "/roms/dig_dug.zip",
+      "metadata": {
+        "fileSize": 9335487,
+        "lastPlayed": "2024-10-14T20:40:15.287Z",
+        "playCount": 414,
+        "highScore": 727165,
+        "difficulty": "Normal",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Dig Dug: This game was released in 1984 and belongs to the Puzzle genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_70",
+      "name": "Mr. Do!",
+      "genre": "Racing",
+      "year": 1982,
+      "players": 1,
+      "description": "Racing game: Mr. Do!. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "steering",
+        "accelerator",
+        "brake"
+      ],
+      "screenshot": "/screenshots/mr__do_.jpg",
+      "rom": "/roms/mr__do_.zip",
+      "metadata": {
+        "fileSize": 6382740,
+        "lastPlayed": "2024-11-22T09:56:41.120Z",
+        "playCount": 659,
+        "highScore": 639041,
+        "difficulty": "Easy",
+        "category": "Rare"
+      },
+      "manualText": "Game Manual for Mr. Do!: This game was released in 1982 and belongs to the Racing genre. It supports 1 player(s) and uses the following controls: steering, accelerator, brake. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_71",
+      "name": "Burgertime",
+      "genre": "Sports",
+      "year": 1991,
+      "players": 2,
+      "description": "Sports game: Burgertime. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/burgertime.jpg",
+      "rom": "/roms/burgertime.zip",
+      "metadata": {
+        "fileSize": 5481477,
+        "lastPlayed": "2024-12-10T15:21:55.515Z",
+        "playCount": 926,
+        "highScore": 48601,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Burgertime: This game was released in 1987 and belongs to the Sports genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_72",
+      "name": "Lady Bug",
+      "genre": "Beat 'em up",
+      "year": 1993,
+      "players": 2,
+      "description": "Beat 'em up game: Lady Bug. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3"
+      ],
+      "screenshot": "/screenshots/lady_bug.jpg",
+      "rom": "/roms/lady_bug.zip",
+      "metadata": {
+        "fileSize": 8227529,
+        "lastPlayed": "2025-05-04T22:58:50.228Z",
+        "playCount": 551,
+        "highScore": 637367,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Lady Bug: This game was released in 1989 and belongs to the Beat 'em up genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_73",
+      "name": "Pengo",
+      "genre": "Arcade",
+      "year": 1983,
+      "players": 1,
+      "description": "Arcade game: Pengo. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1"
+      ],
+      "screenshot": "/screenshots/pengo.jpg",
+      "rom": "/roms/pengo.zip",
+      "metadata": {
+        "fileSize": 2529645,
+        "lastPlayed": "2025-03-23T12:44:06.467Z",
+        "playCount": 876,
+        "highScore": 172259,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Pengo: This game was released in 1980 and belongs to the Arcade genre. It supports 1 player(s) and uses the following controls: joystick, button1. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_74",
+      "name": "Crush Roller",
+      "genre": "Fighting",
+      "year": 1998,
+      "players": 2,
+      "description": "Fighting game: Crush Roller. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2",
+        "button3",
+        "button4",
+        "button5",
+        "button6"
+      ],
+      "screenshot": "/screenshots/crush_roller.jpg",
+      "rom": "/roms/crush_roller.zip",
+      "metadata": {
+        "fileSize": 3633038,
+        "lastPlayed": "2025-09-03T02:30:56.211Z",
+        "playCount": 113,
+        "highScore": 788085,
+        "difficulty": "Easy",
+        "category": "Popular"
+      },
+      "manualText": "Game Manual for Crush Roller: This game was released in 1991 and belongs to the Fighting genre. It supports 2 player(s) and uses the following controls: joystick, button1, button2, button3, button4, button5, button6. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    },
+    {
+      "id": "game_75",
+      "name": "Make Trax",
+      "genre": "Shoot 'em up",
+      "year": 1988,
+      "players": 1,
+      "description": "Shoot 'em up game: Make Trax. This is a test description that contains enough text to simulate real game metadata that would be loaded into memory during configuration parsing.",
+      "controls": [
+        "joystick",
+        "button1",
+        "button2"
+      ],
+      "screenshot": "/screenshots/make_trax.jpg",
+      "rom": "/roms/make_trax.zip",
+      "metadata": {
+        "fileSize": 3166531,
+        "lastPlayed": "2025-06-06T22:43:13.381Z",
+        "playCount": 596,
+        "highScore": 691933,
+        "difficulty": "Hard",
+        "category": "Classic"
+      },
+      "manualText": "Game Manual for Make Trax: This game was released in 1981 and belongs to the Shoot 'em up genre. It supports 1 player(s) and uses the following controls: joystick, button1, button2. The objective varies based on the genre, but generally involves achieving high scores and completing levels or objectives.",
+      "tips": [
+        "Master the basic controls before attempting advanced techniques",
+        "Pay attention to enemy patterns and timing",
+        "Practice makes perfect - don't give up!",
+        "Look for bonus opportunities and power-ups",
+        "Learn from watching experienced players"
+      ]
+    }
+  ]
+}
