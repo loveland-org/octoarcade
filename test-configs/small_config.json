@@ -1,0 +1,63 @@
+{
+  "name": "Small Arcade Collection",
+  "description": "A small test configuration with 5 classic games",
+  "version": "1.0",
+  "created": "2025-09-08",
+  "games": [
+    {
+      "id": "pac_man",
+      "name": "Pac-Man",
+      "genre": "Arcade",
+      "year": 1980,
+      "players": 1,
+      "description": "Guide Pac-Man through a maze eating dots while avoiding ghosts",
+      "controls": ["joystick", "button1"],
+      "screenshot": "/screenshots/pacman.jpg",
+      "rom": "/roms/pacman.zip"
+    },
+    {
+      "id": "street_fighter_2",
+      "name": "Street Fighter II",
+      "genre": "Fighting",
+      "year": 1991,
+      "players": 2,
+      "description": "Classic fighting game with iconic characters",
+      "controls": ["joystick", "button1", "button2", "button3", "button4", "button5", "button6"],
+      "screenshot": "/screenshots/sf2.jpg",
+      "rom": "/roms/sf2.zip"
+    },
+    {
+      "id": "galaga",
+      "name": "Galaga",
+      "genre": "Shoot 'em up",
+      "year": 1981,
+      "players": 1,
+      "description": "Shoot alien invaders and rescue captured ships",
+      "controls": ["joystick", "button1"],
+      "screenshot": "/screenshots/galaga.jpg",
+      "rom": "/roms/galaga.zip"
+    },
+    {
+      "id": "donkey_kong",
+      "name": "Donkey Kong",
+      "genre": "Platform",
+      "year": 1981,
+      "players": 1,
+      "description": "Jump over barrels and climb ladders to rescue the princess",
+      "controls": ["joystick", "button1"],
+      "screenshot": "/screenshots/dk.jpg",
+      "rom": "/roms/dk.zip"
+    },
+    {
+      "id": "frogger",
+      "name": "Frogger",
+      "genre": "Arcade",
+      "year": 1981,
+      "players": 1,
+      "description": "Help the frog cross busy roads and rivers",
+      "controls": ["joystick"],
+      "screenshot": "/screenshots/frogger.jpg",
+      "rom": "/roms/frogger.zip"
+    }
+  ]
+}
