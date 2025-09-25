@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OctoArcade - Cabinet Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-gamepad"></i> OctoArcade</h1>
+                <p>Arcade Cabinet Management Dashboard</p>
+            </div>
+            <div class="header-actions">
+                <button id="settings-btn" class="btn btn-secondary">
+                    <i class="fas fa-cog"></i> Settings
+                </button>
+                <button id="new-config-btn" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> New Configuration
+                </button>
+                <button id="import-btn" class="btn btn-secondary">
+                    <i class="fas fa-upload"></i> Import
+                </button>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <i class="fas fa-cogs"></i>
+                    <div class="stat-info">
+                        <span class="stat-number" id="total-configs">0</span>
+                        <span class="stat-label">Configurations</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-games"></i>
+                    <div class="stat-info">
+                        <span class="stat-number" id="total-games">0</span>
+                        <span class="stat-label">Total Games</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <div class="stat-info">
+                        <span class="stat-number" id="last-used">Never</span>
+                        <span class="stat-label">Last Used</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="configurations-grid" id="configurations-grid">
+                <!-- Configuration cards will be dynamically generated here -->
+            </div>
+
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <i class="fas fa-gamepad empty-icon"></i>
+                <h3>No Configurations Yet</h3>
+                <p>Create your first arcade cabinet configuration to get started!</p>
+                <button class="btn btn-primary" onclick="showNewConfigModal()">
+                    <i class="fas fa-plus"></i> Create Configuration
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Settings</h3>
+                <span class="close" onclick="closeModal('settings-modal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h4>General Settings</h4>
+                    <div class="form-group">
+                        <label for="auto-save">Auto-save configurations</label>
+                        <input type="checkbox" id="auto-save" checked>
+                    </div>
+                    <div class="form-group">
+                        <label for="theme-select">Theme</label>
+                        <select id="theme-select">
+                            <option value="default">Default</option>
+                            <option value="dark">Dark</option>
+                            <option value="light">Light</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h4 class="pinned-fields-title">Pinned issue fields</h4>
+                    <div class="form-group">
+                        <label for="show-assignee">Show assignee field</label>
+                        <input type="checkbox" id="show-assignee" checked>
+                    </div>
+                    <div class="form-group">
+                        <label for="show-labels">Show labels field</label>
+                        <input type="checkbox" id="show-labels" checked>
+                    </div>
+                    <div class="form-group">
+                        <label for="show-milestone">Show milestone field</label>
+                        <input type="checkbox" id="show-milestone">
+                    </div>
+                    <div class="form-group">
+                        <label for="show-projects">Show projects field</label>
+                        <input type="checkbox" id="show-projects">
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h4>Advanced Settings</h4>
+                    <div class="form-group">
+                        <label for="max-configs">Maximum configurations</label>
+                        <input type="number" id="max-configs" value="50" min="1" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="backup-interval">Auto-backup interval (days)</label>
+                        <input type="number" id="backup-interval" value="7" min="1" max="30">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('settings-modal')">Cancel</button>
+                <button type="button" class="btn btn-primary" id="save-settings-btn">Save Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
