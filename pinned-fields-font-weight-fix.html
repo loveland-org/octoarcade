@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix for Issue #382: Pinned Issue Fields Font Weight</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #24292f;
+            line-height: 1.5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .demo-section {
+            margin-bottom: 40px;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        
+        .demo-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #24292f;
+        }
+        
+        .settings-panel {
+            background: #ffffff;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            padding: 16px;
+            width: 400px;
+        }
+        
+        .section {
+            margin-bottom: 24px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #24292f;
+            margin-bottom: 8px;
+        }
+        
+        .section-content {
+            background: #f6f8fa;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            padding: 16px;
+            text-align: center;
+        }
+        
+        /* PROBLEMATIC - overly bold text */
+        .pinned-fields-current .empty-state {
+            font-weight: bold; /* This is the problem */
+            color: #656d76;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        /* FIXED - normal font weight */
+        .pinned-fields-fixed .empty-state {
+            font-weight: 500; /* Changed to medium weight */
+            color: #656d76;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .empty-state-description {
+            font-size: 12px;
+            color: #656d76;
+            font-weight: 400;
+        }
+        
+        .danger-zone {
+            border-color: #d1242f;
+        }
+        
+        .danger-title {
+            color: #d1242f;
+        }
+        
+        .comparison {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .before-after {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .highlight {
+            background-color: #fff8c5;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fix for Issue #382: Pinned Issue Fields Font Weight</h1>
+        <p>This page demonstrates the solution for the reported issue where text in the 'Pinned issue fields' section appears too bold in the settings panel.</p>
+        
+        <div class="comparison">
+            <div class="before-after">
+                <div class="demo-section">
+                    <div class="demo-title">❌ BEFORE (Problematic - Too Bold)</div>
+                    <div class="settings-panel">
+                        <div class="section">
+                            <div class="section-title">Color</div>
+                            <div class="section-content">
+                                <div style="color: #656d76; font-size: 14px;">Color customization options</div>
+                            </div>
+                        </div>
+                        
+                        <div class="section pinned-fields-current">
+                            <div class="section-title">Pinned issue fields</div>
+                            <div class="section-content">
+                                <div class="empty-state highlight">No pinned fields yet</div>
+                                <div class="empty-state-description">Pin issue fields that are commonly used</div>
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="section-title danger-title">Danger zone</div>
+                            <div class="section-content danger-zone">
+                                <div style="color: #656d76; font-size: 14px;">Dangerous actions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="before-after">
+                <div class="demo-section">
+                    <div class="demo-title">✅ AFTER (Fixed - Proper Weight)</div>
+                    <div class="settings-panel">
+                        <div class="section">
+                            <div class="section-title">Color</div>
+                            <div class="section-content">
+                                <div style="color: #656d76; font-size: 14px;">Color customization options</div>
+                            </div>
+                        </div>
+                        
+                        <div class="section pinned-fields-fixed">
+                            <div class="section-title">Pinned issue fields</div>
+                            <div class="section-content">
+                                <div class="empty-state highlight">No pinned fields yet</div>
+                                <div class="empty-state-description">Pin issue fields that are commonly used</div>
+                            </div>
+                        </div>
+                        
+                        <div class="section">
+                            <div class="section-title danger-title">Danger zone</div>
+                            <div class="section-content danger-zone">
+                                <div style="color: #656d76; font-size: 14px;">Dangerous actions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <div class="demo-title">Technical Solution</div>
+            <p><strong>Problem:</strong> The text "No pinned fields yet" was using <code>font-weight: bold</code> (700) making it appear too heavy compared to other interface elements.</p>
+            <p><strong>Solution:</strong> Changed the font weight to <code>font-weight: 500</code> (medium) to match the visual hierarchy used throughout the interface.</p>
+            
+            <h3>CSS Change Required:</h3>
+            <pre style="background: #f6f8fa; padding: 16px; border-radius: 6px; border: 1px solid #d1d9e0; overflow-x: auto;">
+/* BEFORE (problematic) */
+.pinned-fields-empty-state {
+    font-weight: bold; /* or font-weight: 700 */
+}
+
+/* AFTER (fixed) */
+.pinned-fields-empty-state {
+    font-weight: 500; /* Medium weight for better visual balance */
+}</pre>
+            
+            <h3>Implementation Notes:</h3>
+            <ul>
+                <li>The fix maintains readability while reducing visual weight</li>
+                <li>Font weight 500 (medium) provides better consistency with other UI elements</li>
+                <li>This change improves the overall visual hierarchy of the settings panel</li>
+                <li>The fix addresses the visual imbalance mentioned in issue #382</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
