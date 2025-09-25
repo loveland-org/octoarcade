@@ -358,9 +358,9 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Fix for the Pinned issue fields title - ensure normal font weight */
-.pinned-fields-title {
-    font-weight: normal !important;
+/* Fix for the .pinned-fields-title class - ensure normal font weight for visual consistency */
+.settings-section .pinned-fields-title {
+    font-weight: normal;
     color: #2d3748;
     font-size: 1rem;
     margin-bottom: 1rem;
