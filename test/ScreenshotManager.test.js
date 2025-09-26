@@ -2,6 +2,9 @@ const ScreenshotManager = require('../src/ScreenshotManager');
 const fs = require('fs-extra');
 const path = require('path');
 
+// Mock fs-extra for error testing
+jest.mock('fs-extra');
+
 describe('ScreenshotManager', () => {
   let screenshotManager;
   let testDir;
@@ -9,12 +12,17 @@ describe('ScreenshotManager', () => {
   beforeEach(() => {
     screenshotManager = new ScreenshotManager();
     testDir = path.join(__dirname, 'test-screenshots');
+    // Clear all mocks
+    jest.clearAllMocks();
   });
 
   afterEach(async () => {
-    // Clean up test directory
-    if (await fs.pathExists(testDir)) {
-      await fs.remove(testDir);
+    // Restore fs-extra for cleanup operations
+    jest.restoreAllMocks();
+    // Clean up test directory using real fs
+    const realFs = require('fs-extra');
+    if (await realFs.pathExists(testDir)) {
+      await realFs.remove(testDir);
     }
   });
 
@@ -63,11 +71,13 @@ describe('ScreenshotManager', () => {
 
   describe('listScreenshots', () => {
     test('should list PNG files in directory', async () => {
-      // Setup test directory with files
-      await fs.ensureDir(testDir);
-      await fs.writeFile(path.join(testDir, '1758538266417-screenshot_keyframe_6_14.500s.png'), 'fake image');
-      await fs.writeFile(path.join(testDir, 'not-a-screenshot.txt'), 'text file');
-      await fs.writeFile(path.join(testDir, 'another-image.jpg'), 'jpeg file');
+      // Mock fs methods for this test
+      fs.ensureDir.mockResolvedValue();
+      fs.readdir.mockResolvedValue([
+        '1758538266417-screenshot_keyframe_6_14.500s.png',
+        'not-a-screenshot.txt',
+        'another-image.jpg'
+      ]);
 
       const screenshots = await screenshotManager.listScreenshots(testDir);
       
@@ -76,11 +86,17 @@ describe('ScreenshotManager', () => {
     });
 
     test('should handle empty directory', async () => {
+      fs.ensureDir.mockResolvedValue();
+      fs.readdir.mockResolvedValue([]);
+      
       const screenshots = await screenshotManager.listScreenshots(testDir);
       expect(screenshots).toHaveLength(0);
     });
 
     test('should handle non-existent directory', async () => {
+      fs.ensureDir.mockResolvedValue();
+      fs.readdir.mockResolvedValue([]);
+      
       const nonExistentDir = path.join(__dirname, 'does-not-exist');
       const screenshots = await screenshotManager.listScreenshots(nonExistentDir);
       expect(screenshots).toHaveLength(0);
@@ -89,10 +105,12 @@ describe('ScreenshotManager', () => {
 
   describe('validateAllScreenshots', () => {
     test('should validate multiple screenshots correctly', async () => {
-      await fs.ensureDir(testDir);
-      await fs.writeFile(path.join(testDir, '1758538266417-screenshot_keyframe_6_14.500s.png'), 'fake image');
-      await fs.writeFile(path.join(testDir, 'invalid-name.png'), 'invalid image');
-      await fs.writeFile(path.join(testDir, 'screenshot-2025-09-18T16-27-05-539Z-1.png'), 'issue screenshot');
+      fs.ensureDir.mockResolvedValue();
+      fs.readdir.mockResolvedValue([
+        '1758538266417-screenshot_keyframe_6_14.500s.png',
+        'invalid-name.png',
+        'screenshot-2025-09-18T16-27-05-539Z-1.png'
+      ]);
 
       const result = await screenshotManager.validateAllScreenshots(testDir);
 
@@ -104,15 +122,16 @@ describe('ScreenshotManager', () => {
 
   describe('screenshotExists', () => {
     test('should return true for existing file', async () => {
-      await fs.ensureDir(testDir);
+      fs.pathExists.mockResolvedValue(true);
+      
       const filename = 'test-screenshot.png';
-      await fs.writeFile(path.join(testDir, filename), 'fake image');
-
       const exists = await screenshotManager.screenshotExists(filename, testDir);
       expect(exists).toBe(true);
     });
 
     test('should return false for non-existing file', async () => {
+      fs.pathExists.mockResolvedValue(false);
+      
       const exists = await screenshotManager.screenshotExists('does-not-exist.png', testDir);
       expect(exists).toBe(false);
     });
@@ -120,9 +139,11 @@ describe('ScreenshotManager', () => {
 
   describe('getScreenshotStats', () => {
     test('should return correct statistics', async () => {
-      await fs.ensureDir(testDir);
-      await fs.writeFile(path.join(testDir, '1758538266417-screenshot_keyframe_6_14.500s.png'), 'valid');
-      await fs.writeFile(path.join(testDir, 'invalid-name.png'), 'invalid');
+      fs.ensureDir.mockResolvedValue();
+      fs.readdir.mockResolvedValue([
+        '1758538266417-screenshot_keyframe_6_14.500s.png',
+        'invalid-name.png'
+      ]);
 
       const stats = await screenshotManager.getScreenshotStats(testDir);
 
@@ -134,6 +155,9 @@ describe('ScreenshotManager', () => {
     });
 
     test('should handle empty directory', async () => {
+      fs.ensureDir.mockResolvedValue();
+      fs.readdir.mockResolvedValue([]);
+      
       const stats = await screenshotManager.getScreenshotStats(testDir);
 
       expect(stats.totalCount).toBe(0);
@@ -146,10 +170,10 @@ describe('ScreenshotManager', () => {
 
   describe('error handling', () => {
     test('should handle filesystem errors gracefully', async () => {
-      // Try to access a path that will cause permission error in some systems
-      const inaccessiblePath = '/root/restricted';
+      // Mock fs methods to throw an error
+      fs.ensureDir.mockRejectedValue(new Error('Permission denied'));
       
-      await expect(screenshotManager.getScreenshotStats(inaccessiblePath))
+      await expect(screenshotManager.getScreenshotStats(testDir))
         .rejects.toThrow('Failed to get screenshot statistics');
     });
   });
