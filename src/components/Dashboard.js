@@ -639,12 +639,36 @@ class Dashboard {
   }
 
   /**
-   * Shows error message
+   * Shows error message as a toast notification
    * @param {string} message - Error message
    */
   showError(message) {
     console.error(message);
-    alert(message);
+    
+    // Create toast element
+    const toast = document.createElement('div');
+    toast.className = 'toast toast-error';
+    toast.innerHTML = `
+      <span class="toast-icon">❌</span>
+      <span class="toast-message">${this.escapeHTML(message)}</span>
+      <button class="toast-close">✕</button>
+    `;
+    
+    // Add close functionality
+    const closeBtn = toast.querySelector('.toast-close');
+    closeBtn.addEventListener('click', () => toast.remove());
+    
+    // Auto-remove after 5 seconds
+    setTimeout(() => toast.remove(), 5000);
+    
+    // Add to container (create if needed)
+    let container = document.querySelector('.toast-container');
+    if (!container) {
+      container = document.createElement('div');
+      container.className = 'toast-container';
+      document.body.appendChild(container);
+    }
+    container.appendChild(toast);
   }
 
   /**

@@ -8,11 +8,16 @@
  */
 
 // Import utilities (works in both browser and Node.js)
-let MemoryPool, ConfigurationValidator, StreamingConfigParser;
+let MemoryPool_Local, ConfigurationValidator_Local, StreamingConfigParser_Local;
 if (typeof require !== 'undefined') {
-  ({ MemoryPool } = require('./memoryPool'));
-  ({ ConfigurationValidator } = require('./configValidator'));
-  ({ StreamingConfigParser } = require('./streamingParser'));
+  ({ MemoryPool: MemoryPool_Local } = require('./memoryPool'));
+  ({ ConfigurationValidator: ConfigurationValidator_Local } = require('./configValidator'));
+  ({ StreamingConfigParser: StreamingConfigParser_Local } = require('./streamingParser'));
+} else {
+  // In browser, these are available as globals
+  MemoryPool_Local = MemoryPool;
+  ConfigurationValidator_Local = ConfigurationValidator;
+  StreamingConfigParser_Local = StreamingConfigParser;
 }
 
 /**
@@ -30,8 +35,8 @@ class ConfigurationManager {
    * @param {Function} options.onError - Error callback
    */
   constructor(options = {}) {
-    this.memoryPool = new MemoryPool(options.memoryPool || {});
-    this.validator = new ConfigurationValidator(options.validator || {});
+    this.memoryPool = new MemoryPool_Local(options.memoryPool || {});
+    this.validator = new ConfigurationValidator_Local(options.validator || {});
     this.parserOptions = options.parser || {};
     
     this.onConfigLoaded = options.onConfigLoaded || (() => {});
@@ -53,7 +58,7 @@ class ConfigurationManager {
    * @returns {Promise<Object>} Load result
    */
   async loadFromString(configString, options = {}) {
-    const parser = new StreamingConfigParser({
+    const parser = new StreamingConfigParser_Local({
       ...this.parserOptions,
       onProgress: (progress) => {
         this.loadingState.progress = progress;
@@ -82,7 +87,7 @@ class ConfigurationManager {
    * @returns {Promise<Object>} Load result
    */
   async loadFromFile(file, options = {}) {
-    const parser = new StreamingConfigParser({
+    const parser = new StreamingConfigParser_Local({
       ...this.parserOptions,
       onProgress: (progress) => {
         this.loadingState.progress = progress;
@@ -111,7 +116,7 @@ class ConfigurationManager {
    * @returns {Promise<Object>} Load result
    */
   async loadFromUrl(url, options = {}) {
-    const parser = new StreamingConfigParser({
+    const parser = new StreamingConfigParser_Local({
       ...this.parserOptions,
       onProgress: (progress) => {
         this.loadingState.progress = progress;
