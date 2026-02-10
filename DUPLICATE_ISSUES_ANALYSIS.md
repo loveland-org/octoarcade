@@ -88,7 +88,7 @@ After analyzing 100+ issues in the repository, I identified **10 major groups of
 
 ---
 
-## Group 6: "AI Generated Issue" Placeholder Issues (15+ duplicates)
+## Group 6: "AI Generated Issue" Placeholder Issues (20 duplicates)
 
 **Theme:** Issues with identical placeholder title "AI Generated Issue"
 
