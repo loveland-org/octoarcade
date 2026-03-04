@@ -18,10 +18,4 @@ actions:
     allowed: [Copilot, custom-agent-1, custom-agent-2]
 ---
 
-# Triage Agent Configuration
-
-## Instructions
-When a new issue is opened, automatically triage it by:
-1. Applying appropriate labels based on the issue content
-2. Assigning to the correct team based on the area of the codebase affected
-3. Adding priority labels based on severity indicators
+Test
