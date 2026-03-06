@@ -16,7 +16,7 @@ actions:
   close-issue:
     allowed-reasons: [duplicate, not_planned]
   assign-agent:
-    enabled: true
+    enabled: false
     allowed: [Copilot, custom-agent-1, custom-agent-2]
 ---
 
