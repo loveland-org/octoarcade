@@ -11,6 +11,7 @@ allowed-actions:
     blocked: [Epic, Initiative]
   add-fields:
     allowed: [Priority, Area]
+  post-comment: false
   close-issue:
     allowed-reasons: [duplicate, not_planned]
   assign-agent:
