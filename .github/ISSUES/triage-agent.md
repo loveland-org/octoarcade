@@ -13,6 +13,8 @@ allowed-actions:
     allowed: [Priority, Area]
   close-issue:
     allowed-reasons: [duplicate, not_planned]
+  assign-agent:
+    allowed: []
 ---
 
 # Triage Agent Configuration
