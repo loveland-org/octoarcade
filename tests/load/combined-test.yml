@@ -1,0 +1,161 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    # Light load
+    - duration: 30
+      arrivalRate: 5
+      name: "Light load"
+    # Medium load
+    - duration: 60
+      arrivalRate: 15
+      rampTo: 40
+      name: "Medium load"
+    # Heavy load
+    - duration: 90
+      arrivalRate: 40
+      rampTo: 80
+      name: "Heavy load"
+    # Peak load
+    - duration: 60
+      arrivalRate: 80
+      rampTo: 150
+      name: "Peak load"
+    # Sustained peak
+    - duration: 120
+      arrivalRate: 150
+      name: "Sustained peak"
+    # Cool down
+    - duration: 45
+      arrivalRate: 10
+      name: "Cool down"
+  defaults:
+    headers:
+      Content-Type: 'application/json'
+  processor: "./tests/load/processor.js"
+
+scenarios:
+  - name: "User browsing session"
+    weight: 40
+    flow:
+      # User visits dashboard
+      - get:
+          url: "/api/dashboard"
+          capture:
+            - json: "$.stats.totalGames"
+              as: "totalGames"
+          expect:
+            - statusCode: 200
+      - think: 3
+
+      # User searches for something
+      - get:
+          url: "/api/search"
+          qs:
+            q: "{{ searchTerms() }}"
+            limit: "10"
+          expect:
+            - statusCode: [200, 400]
+      - think: 2
+
+      # User views games list
+      - get:
+          url: "/api/games"
+          qs:
+            limit: "8"
+          expect:
+            - statusCode: 200
+      - think: 4
+
+  - name: "Dashboard monitoring"
+    weight: 25
+    flow:
+      - loop:
+        - get:
+            url: "/api/dashboard"
+            expect:
+              - statusCode: 200
+              - contentType: "application/json"
+        - think: 5
+        count: 2
+
+  - name: "Search intensive user"
+    weight: 20
+    flow:
+      # Multiple searches in succession
+      - get:
+          url: "/api/search"
+          qs:
+            q: "{{ gameNames() }}"
+            type: "games"
+          expect:
+            - statusCode: 200
+      - think: 1
+      - get:
+          url: "/api/search"
+          qs:
+            q: "{{ playerTerms() }}"
+            type: "players"
+          expect:
+            - statusCode: 200
+      - think: 1
+      - get:
+          url: "/api/search"
+          qs:
+            q: "{{ gameGenres() }}"
+            type: "games"
+            limit: "15"
+          expect:
+            - statusCode: 200
+      - think: 2
+
+  - name: "API explorer"
+    weight: 10
+    flow:
+      # Health check
+      - get:
+          url: "/health"
+          expect:
+            - statusCode: 200
+      - think: 1
+      
+      # Dashboard
+      - get:
+          url: "/api/dashboard"
+          expect:
+            - statusCode: 200
+      - think: 2
+      
+      # Players list
+      - get:
+          url: "/api/players"
+          expect:
+            - statusCode: 200
+      - think: 1
+      
+      # Games by genre
+      - get:
+          url: "/api/games"
+          qs:
+            genre: "{{ gameGenres() }}"
+          expect:
+            - statusCode: 200
+      - think: 3
+
+  - name: "Error scenario testing"
+    weight: 5
+    flow:
+      # Invalid search
+      - get:
+          url: "/api/search"
+          qs:
+            q: ""
+          expect:
+            - statusCode: 400
+      - think: 1
+      
+      # Non-existent endpoint
+      - get:
+          url: "/api/nonexistent"
+          expect:
+            - statusCode: 404
+      - think: 1
