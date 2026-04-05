@@ -1,0 +1,98 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    # Warm up phase
+    - duration: 30
+      arrivalRate: 3
+      name: "Warm up"
+    # Ramp up phase
+    - duration: 60
+      arrivalRate: 5
+      rampTo: 30
+      name: "Ramp up"
+    # Sustained load phase
+    - duration: 120
+      arrivalRate: 30
+      name: "Sustained load"
+    # Peak load phase
+    - duration: 60
+      arrivalRate: 60
+      name: "Peak load"
+    # Cool down phase
+    - duration: 30
+      arrivalRate: 5
+      name: "Cool down"
+  defaults:
+    headers:
+      Content-Type: 'application/json'
+
+scenarios:
+  - name: "Dashboard main view"
+    weight: 50
+    flow:
+      - get:
+          url: "/api/dashboard"
+          expect:
+            - statusCode: 200
+            - hasProperty: "stats"
+            - hasProperty: "topGames"
+            - hasProperty: "leaderboard"
+            - hasProperty: "recentActivity"
+      - think: 5
+
+  - name: "Dashboard with games list"
+    weight: 20
+    flow:
+      - get:
+          url: "/api/dashboard"
+          expect:
+            - statusCode: 200
+      - get:
+          url: "/api/games"
+          qs:
+            limit: "10"
+          expect:
+            - statusCode: 200
+      - think: 3
+
+  - name: "Dashboard with players list"
+    weight: 15
+    flow:
+      - get:
+          url: "/api/dashboard"
+          expect:
+            - statusCode: 200
+      - get:
+          url: "/api/players"
+          qs:
+            limit: "5"
+          expect:
+            - statusCode: 200
+      - think: 4
+
+  - name: "Dashboard with filtered games"
+    weight: 10
+    flow:
+      - get:
+          url: "/api/dashboard"
+          expect:
+            - statusCode: 200
+      - get:
+          url: "/api/games"
+          qs:
+            genre: "{{ $pick(['Arcade', 'Shooter', 'Action', 'Platform']) }}"
+            limit: "15"
+          expect:
+            - statusCode: 200
+      - think: 2
+
+  - name: "Multiple dashboard refreshes"
+    weight: 5
+    flow:
+      - loop:
+        - get:
+            url: "/api/dashboard"
+            expect:
+              - statusCode: 200
+        - think: 2
+        count: 3

@@ -1,0 +1,25 @@
+{
+  "name": "octoarcade",
+  "version": "1.0.0",
+  "description": "Arcade gaming platform with load testing capabilities",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "loadtest": "npx artillery run tests/load/search-test.yml && npx artillery run tests/load/dashboard-test.yml",
+    "loadtest:search": "npx artillery run tests/load/search-test.yml",
+    "loadtest:dashboard": "npx artillery run tests/load/dashboard-test.yml"
+  },
+  "keywords": ["arcade", "gaming", "load-testing", "performance"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "artillery": "^1.7.9"
+  }
+}
