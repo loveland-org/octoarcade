@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "node src/components/__tests__/Leaderboard.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^29.0.2"
+  }
+}

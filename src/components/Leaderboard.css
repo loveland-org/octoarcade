@@ -1,0 +1,90 @@
+/* Leaderboard component styles */
+
+.leaderboard {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  max-width: 480px;
+  width: 100%;
+}
+
+.leaderboard__title {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #58a6ff;
+}
+
+.leaderboard__empty {
+  text-align: center;
+  color: #8b949e;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.leaderboard__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard__table thead tr {
+  border-bottom: 1px solid #30363d;
+}
+
+.leaderboard__col {
+  padding: 0.45rem 0.75rem;
+  text-align: left;
+}
+
+.leaderboard__col--rank {
+  width: 3rem;
+  text-align: center;
+  font-weight: 600;
+  color: #8b949e;
+}
+
+.leaderboard__col--score {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: #3fb950;
+}
+
+.leaderboard__table thead .leaderboard__col {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8b949e;
+}
+
+.leaderboard__row {
+  border-bottom: 1px solid #21262d;
+  transition: background 0.15s;
+}
+
+.leaderboard__row:last-child {
+  border-bottom: none;
+}
+
+.leaderboard__row:hover {
+  background: #161b22;
+}
+
+.leaderboard__row--current {
+  background: #1f2d3d;
+}
+
+.leaderboard__row--current .leaderboard__col--player {
+  font-weight: 700;
+  color: #58a6ff;
+}
+
+.leaderboard__row--current:hover {
+  background: #1f2d3d;
+}
