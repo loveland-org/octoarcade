@@ -1,0 +1,4 @@
+messages:
+  - role: system
+    content: Test
+model: openai/gpt-4o
