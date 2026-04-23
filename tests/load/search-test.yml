@@ -1,0 +1,91 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    # Warm up phase
+    - duration: 30
+      arrivalRate: 5
+      name: "Warm up"
+    # Ramp up phase
+    - duration: 60
+      arrivalRate: 10
+      rampTo: 50
+      name: "Ramp up"
+    # Sustained load phase
+    - duration: 120
+      arrivalRate: 50
+      name: "Sustained load"
+    # Peak load phase
+    - duration: 60
+      arrivalRate: 100
+      name: "Peak load"
+    # Cool down phase
+    - duration: 30
+      arrivalRate: 10
+      name: "Cool down"
+  defaults:
+    headers:
+      Content-Type: 'application/json'
+
+scenarios:
+  - name: "Search for games by name"
+    weight: 30
+    flow:
+      - get:
+          url: "/api/search"
+          qs:
+            q: "{{ $randomString() }}"
+            type: "games"
+            limit: "10"
+          expect:
+            - statusCode: [200, 400]
+      - think: 1
+
+  - name: "Search for players"
+    weight: 20
+    flow:
+      - get:
+          url: "/api/search"
+          qs:
+            q: "Player"
+            type: "players"
+            limit: "5"
+          expect:
+            - statusCode: 200
+      - think: 2
+
+  - name: "Search all content"
+    weight: 25
+    flow:
+      - get:
+          url: "/api/search"
+          qs:
+            q: "{{ $pick(['pac', 'space', 'arcade', 'player', 'king', 'master']) }}"
+            limit: "20"
+          expect:
+            - statusCode: 200
+            - hasProperty: "results"
+      - think: 1
+
+  - name: "Search with various parameters"
+    weight: 15
+    flow:
+      - get:
+          url: "/api/search"
+          qs:
+            q: "{{ $pick(['shooter', 'action', 'arcade', 'platform']) }}"
+            type: "games"
+            limit: "{{ $pick([5, 10, 15, 20]) }}"
+          expect:
+            - statusCode: 200
+      - think: 3
+
+  - name: "Empty or invalid search"
+    weight: 10
+    flow:
+      - get:
+          url: "/api/search"
+          qs:
+            q: ""
+          expect:
+            - statusCode: 400
+      - think: 1
