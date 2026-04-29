@@ -3,7 +3,8 @@ description: |
   This workflow does a first review on a PR. It reads the PR description and comments, and adds a comment with a summary of the PR, and any questions or suggestions for improvement. The goal is to provide a quick overview of the PR for maintainers, and to help identify any potential issues or areas for improvement early on.
 
 on:
-  schedule: every 1h
+  pull_request:
+    types: [opened, edited, reopened]
   workflow_dispatch:
 
 permissions:
