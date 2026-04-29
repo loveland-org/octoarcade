@@ -31,7 +31,7 @@ safe-outputs:
     target-repo: "loveland-org/octoarcade" # cross-repository
 ---
 
-# Daily Repo Status
+# PR Review Workflow
 
 Create a summary comment on new PRs with insights and suggestions for improvement.
 
