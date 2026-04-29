@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Test - Arcade Cabinet Dashboard</title>
+</head>
+<body>
+    <h1>Performance Test Results</h1>
+    <div id="results"></div>
+
+    <script src="config-manager.js"></script>
+    <script>
+        async function runPerformanceTests() {
+            const results = document.getElementById('results');
+            const configManager = new ConfigurationManager();
+            
+            // Clear existing configurations
+            configManager.configurations.clear();
+            
+            results.innerHTML += '<h2>Testing with 15 configurations...</h2>';
+            
+            const startTime = performance.now();
+            
+            // Create 15 test configurations
+            for (let i = 1; i <= 15; i++) {
+                const games = [];
+                for (let j = 1; j <= 8; j++) {
+                    games.push(`Game ${i}-${j}`);
+                }
+                
+                try {
+                    await configManager.addConfiguration({
+                        name: `Test Config ${i}`,
+                        description: `Test configuration ${i} with multiple games`,
+                        games: games.join(', '),
+                        settings: JSON.stringify({
+                            controls: {
+                                player1: { up: "W", down: "S", left: "A", right: "D" }
+                            },
+                            display: { resolution: "1920x1080" },
+                            audio: { volume: 80 }
+                        })
+                    });
+                    results.innerHTML += `<p>✅ Created configuration ${i}</p>`;
+                } catch (e) {
+                    results.innerHTML += `<p>❌ Failed to create configuration ${i}: ${e.message}</p>`;
+                }
+            }
+            
+            const endTime = performance.now();
+            const totalTime = Math.round(endTime - startTime);
+            
+            results.innerHTML += `<h3>Results:</h3>`;
+            results.innerHTML += `<p><strong>Total configurations:</strong> ${configManager.getAllConfigurations().length}</p>`;
+            results.innerHTML += `<p><strong>Total time to create 15 configs:</strong> ${totalTime}ms</p>`;
+            results.innerHTML += `<p><strong>Average time per config:</strong> ${Math.round(totalTime / 15)}ms</p>`;
+            
+            const memStats = configManager.getMemoryStats();
+            results.innerHTML += `<p><strong>Memory used:</strong> ${configManager.formatBytes(memStats.allocated)} / ${configManager.formatBytes(memStats.maxMemory)} (${memStats.percentUsed}%)</p>`;
+            
+            // Test retrieval performance
+            const retrievalStart = performance.now();
+            const allConfigs = configManager.getAllConfigurations();
+            const retrievalEnd = performance.now();
+            
+            results.innerHTML += `<p><strong>Retrieval time for ${allConfigs.length} configs:</strong> ${Math.round(retrievalEnd - retrievalStart)}ms</p>`;
+            
+            // Test search performance
+            const searchStart = performance.now();
+            const searchResults = configManager.searchConfigurations('Test Config 10');
+            const searchEnd = performance.now();
+            
+            results.innerHTML += `<p><strong>Search time:</strong> ${Math.round(searchEnd - searchStart)}ms (found ${searchResults.length} results)</p>`;
+            
+            // Test switching performance
+            const switchStart = performance.now();
+            configManager.setActiveConfiguration(allConfigs[5].id);
+            const switchEnd = performance.now();
+            
+            results.innerHTML += `<p><strong>Configuration switch time:</strong> ${Math.round(switchEnd - switchStart)}ms</p>`;
+            
+            // Overall verdict
+            results.innerHTML += `<h3>Performance Verdict:</h3>`;
+            if (totalTime < 2000 && allConfigs.length >= 10) {
+                results.innerHTML += `<p style="color: green; font-weight: bold;">✅ PASS: Dashboard handles 10+ configurations and loads in under 2 seconds</p>`;
+            } else {
+                results.innerHTML += `<p style="color: red; font-weight: bold;">❌ FAIL: Performance requirements not met</p>`;
+            }
+            
+            if (memStats.percentUsed < 80) {
+                results.innerHTML += `<p style="color: green; font-weight: bold;">✅ PASS: Memory usage is within acceptable limits</p>`;
+            } else {
+                results.innerHTML += `<p style="color: orange; font-weight: bold;">⚠️ WARNING: High memory usage detected</p>`;
+            }
+        }
+        
+        runPerformanceTests().catch(e => {
+            document.getElementById('results').innerHTML += `<p style="color: red;">Error: ${e.message}</p>`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Cabinet Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕹️ Arcade Cabinet Management Dashboard</h1>
+            <p class="subtitle">Manage your arcade cabinet configurations with ease</p>
+        </header>
+
+        <div class="controls">
+            <button id="addConfigBtn" class="btn btn-primary">+ Add Configuration</button>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search configurations...">
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-value" id="totalConfigs">0</span>
+                <span class="stat-label">Total Configurations</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="activeConfig">None</span>
+                <span class="stat-label">Active Configuration</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="loadTime">0ms</span>
+                <span class="stat-label">Last Load Time</span>
+            </div>
+        </div>
+
+        <div id="loadingIndicator" class="loading-overlay" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading configurations...</p>
+        </div>
+
+        <div id="configGrid" class="config-grid">
+            <!-- Configuration cards will be added dynamically -->
+        </div>
+
+        <!-- Add/Edit Configuration Modal -->
+        <div id="configModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Add Configuration</h2>
+                <form id="configForm">
+                    <div class="form-group">
+                        <label for="configName">Configuration Name</label>
+                        <input type="text" id="configName" required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="configDescription">Description</label>
+                        <textarea id="configDescription" rows="3" maxlength="200"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="configGames">Games (comma-separated)</label>
+                        <textarea id="configGames" rows="5" required></textarea>
+                        <small>Max 100 games per configuration</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="configSettings">Settings (JSON)</label>
+                        <textarea id="configSettings" rows="8" required></textarea>
+                        <small>Max 1MB configuration size</small>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="config-manager.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
