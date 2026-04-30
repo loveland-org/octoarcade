@@ -58,13 +58,10 @@ specific reproduction details that are missing. Be helpful, neutral, and concise
 
 ## Comment rules
 
-- Only comment if there is something useful to ask or confirm.
-- Do **not** comment if the issue already contains: clear steps to reproduce, expected vs actual
-  behaviour, environment details, and (where relevant) logs or screenshots.
-- Do **not** repeat information the author already provided.
-- Never request more than what is genuinely missing.
-- Be friendly, neutral, and brief. No sarcasm, no emojis-as-decoration (a single relevant emoji is fine).
-- Address the author directly in second person ("you").
+- ALWAYS post a comment
+- The comment should give a general summary of the thinking the agent did to classify the issue, and what information is missing if any.
+- The comment should ask for only the specific missing information needed to reproduce the bug, and nothing more. Do not ask for information that is already provided, even if it is incomplete or unclear.
+
 
 ## Comment template (use only the missing sections)
 
