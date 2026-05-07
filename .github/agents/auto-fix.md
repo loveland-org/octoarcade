@@ -1,6 +1,6 @@
 ---
 name: Auto fix
-description: asdasd
+description: Auto fix on issue create
 tools:
   - github/create_pull_request
 on:
