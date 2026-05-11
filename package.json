@@ -1,0 +1,19 @@
+{
+  "name": "octoarcade",
+  "version": "1.0.0",
+  "description": "Arcade Cabinet Management Dashboard",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "node tests/test.js",
+    "start": "npx serve src"
+  },
+  "keywords": [
+    "arcade",
+    "cabinet",
+    "gaming",
+    "dashboard",
+    "configuration"
+  ],
+  "author": "",
+  "license": "MIT"
+}

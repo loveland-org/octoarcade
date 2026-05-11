@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcade Cabinet Manager - Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+</head>
+<body>
+  <div id="app"></div>
+  
+  <!-- Load utilities first -->
+  <script src="utils/memoryPool.js"></script>
+  <script src="utils/configValidator.js"></script>
+  <script src="utils/streamingParser.js"></script>
+  <script src="utils/configManager.js"></script>
+  
+  <!-- Load components -->
+  <script src="components/ConfigurationCard.js"></script>
+  <script src="components/Dashboard.js"></script>
+  
+  <!-- Initialize application -->
+  <script src="app.js"></script>
+</body>
+</html>
