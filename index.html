@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OctoArcade - Cabinet Management Dashboard</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header class="dashboard-header">
+            <h1>🕹️ OctoArcade Dashboard</h1>
+            <p class="subtitle">Manage your arcade cabinet configurations</p>
+        </header>
+
+        <div class="dashboard-actions">
+            <button id="new-config-btn" class="btn btn-primary">
+                ➕ New Configuration
+            </button>
+            <button id="import-config-btn" class="btn btn-secondary">
+                📁 Import Configuration
+            </button>
+            <input type="file" id="file-input" accept=".json" style="display: none;">
+        </div>
+
+        <div id="loading-indicator" class="loading-indicator" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading configurations...</p>
+        </div>
+
+        <div class="dashboard-stats">
+            <div class="stat-card">
+                <span class="stat-value" id="total-configs">0</span>
+                <span class="stat-label">Total Configurations</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="active-config">None</span>
+                <span class="stat-label">Active Configuration</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="memory-usage">0 KB</span>
+                <span class="stat-label">Memory Usage</span>
+            </div>
+        </div>
+
+        <div id="configurations-grid" class="configurations-grid">
+            <!-- Configuration cards will be dynamically inserted here -->
+        </div>
+
+        <div id="no-configs-message" class="no-configs-message">
+            <p>No configurations found. Create or import one to get started!</p>
+        </div>
+    </div>
+
+    <!-- Configuration Modal -->
+    <div id="config-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modal-title">New Configuration</h2>
+            <form id="config-form">
+                <div class="form-group">
+                    <label for="config-name">Configuration Name</label>
+                    <input type="text" id="config-name" required maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label for="config-description">Description</label>
+                    <textarea id="config-description" rows="3" maxlength="500"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="config-games">Games (one per line, max 100)</label>
+                    <textarea id="config-games" rows="8"></textarea>
+                    <small class="form-hint">Enter game titles, one per line</small>
+                </div>
+                <div class="form-group">
+                    <label for="config-controls">Control Scheme</label>
+                    <select id="config-controls">
+                        <option value="joystick-6button">Joystick + 6 Buttons</option>
+                        <option value="joystick-8button">Joystick + 8 Buttons</option>
+                        <option value="dual-joystick">Dual Joystick</option>
+                        <option value="spinner">Spinner</option>
+                        <option value="trackball">Trackball</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Configuration</button>
+                    <button type="button" class="btn btn-secondary" id="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Compare Modal -->
+    <div id="compare-modal" class="modal" style="display: none;">
+        <div class="modal-content modal-large">
+            <span class="modal-close">&times;</span>
+            <h2>Compare Configurations</h2>
+            <div id="compare-content" class="compare-content">
+                <!-- Comparison content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
