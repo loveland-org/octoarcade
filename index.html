@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OctoArcade - Arcade Cabinet Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕹️ OctoArcade</h1>
+            <p>Arcade Cabinet Configuration Manager</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <h2>Load Configuration</h2>
+                <div class="upload-area">
+                    <input type="file" id="configFile" accept=".json" />
+                    <label for="configFile">Choose Configuration File</label>
+                    <div class="file-info">
+                        <span id="fileName"></span>
+                        <span id="fileSize"></span>
+                    </div>
+                </div>
+                <button id="loadConfig" disabled>Apply Configuration</button>
+            </section>
+
+            <section class="progress-section" id="progressSection" style="display: none;">
+                <h3>Loading Configuration...</h3>
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+                <div class="progress-info">
+                    <span id="progressText">Preparing...</span>
+                    <span id="progressPercent">0%</span>
+                </div>
+                <button id="cancelLoad">Cancel</button>
+            </section>
+
+            <section class="config-display">
+                <h2>Configuration Status</h2>
+                <div id="configStatus" class="status-info">
+                    No configuration loaded
+                </div>
+                
+                <div id="gameList" class="game-list" style="display: none;">
+                    <h3>Loaded Games (<span id="gameCount">0</span>)</h3>
+                    <div id="games"></div>
+                </div>
+            </section>
+
+            <section class="memory-info">
+                <h3>Memory Usage</h3>
+                <div id="memoryStatus">
+                    <span>Peak Memory: <span id="peakMemory">0 MB</span></span>
+                    <span>Current Memory: <span id="currentMemory">0 MB</span></span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="config-loader.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
