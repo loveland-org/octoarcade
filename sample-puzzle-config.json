@@ -1,0 +1,48 @@
+{
+  "id": "sample_import_config",
+  "name": "Puzzle Games Collection",
+  "description": "A comprehensive collection of classic puzzle and brain games",
+  "games": [
+    {
+      "id": "tetris_1",
+      "name": "Tetris",
+      "size": 45.2,
+      "genre": "puzzle",
+      "added": "2025-08-10T10:30:00Z"
+    },
+    {
+      "id": "dr_mario_1",
+      "name": "Dr. Mario",
+      "size": 32.8,
+      "genre": "puzzle",
+      "added": "2025-08-10T11:15:00Z"
+    },
+    {
+      "id": "columns_1",
+      "name": "Columns",
+      "size": 28.6,
+      "genre": "puzzle",
+      "added": "2025-08-10T12:00:00Z"
+    },
+    {
+      "id": "puyo_puyo_1",
+      "name": "Puyo Puyo",
+      "size": 41.3,
+      "genre": "puzzle",
+      "added": "2025-08-10T13:45:00Z"
+    },
+    {
+      "id": "bubble_bobble_1",
+      "name": "Bubble Bobble",
+      "size": 52.7,
+      "genre": "puzzle",
+      "added": "2025-08-10T14:20:00Z"
+    }
+  ],
+  "created": "2025-08-10T10:00:00Z",
+  "lastUsed": "2025-08-15T18:30:00Z",
+  "size": 0.2,
+  "exportedAt": "2025-08-22T14:00:00Z",
+  "exportedBy": "OctoArcade Dashboard",
+  "version": "1.0"
+}
